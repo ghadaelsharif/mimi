@@ -5,7 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="مهامي">
-<title>مهامي</title>
+<title>مهامي 🎀</title>
+<meta name="description" content="مهامي: تطبيق مهام وردي كيوت مع مؤقت بومودورو وقطة اسمها ميمي تفرح كلما أنجزتِ مهامكِ 🌸">
+<meta property="og:type" content="website">
+<meta property="og:title" content="مهامي 🎀">
+<meta property="og:description" content="تطبيق مهام وردي كيوت مع بومودورو وقطة ميمي 🌸">
+<meta name="theme-color" content="#FFF1F6">
+<meta name="author" content="غادة">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500;700&display=swap">
 <style>
 :root{
@@ -78,6 +84,8 @@ li .del{border:0;background:none;color:var(--soft);font-size:18px;padding:6px}
 .cats button{border:2px solid transparent;border-radius:99px;padding:7px 14px;font:inherit;font-size:15px;color:var(--ink)}
 .cats button.on{border-color:var(--ink)}
 .save{width:100%;border:0;background:var(--accent);color:#fff;font:inherit;font-size:18px;font-weight:700;padding:13px;border-radius:99px}
+.credit{text-align:center;color:var(--soft);font-size:14px;margin:26px 0 0;line-height:1.8}
+.credit b{color:var(--accent);font-weight:700}
 .toast{position:fixed;top:calc(14px + env(safe-area-inset-top,0px));inset-inline:16px;max-width:440px;margin:0 auto;background:var(--ink);color:var(--bg);border-radius:20px;padding:12px 16px;text-align:center;font-size:16px;opacity:0;pointer-events:none;transition:opacity .3s;z-index:9}
 .toast.show{opacity:1}
 </style>
@@ -107,6 +115,7 @@ li .del{border:0;background:none;color:var(--soft);font-size:18px;padding:6px}
     <button data-f="all">الكل</button>
   </div>
   <ul id="list"></ul>
+  <p class="credit">صُنع بحب 🌸 بواسطة <b>غادة</b><br>© ٢٠٢٦ جميع الحقوق محفوظة</p>
 </div>
 <button class="fab" id="open">＋ مهمة جديدة</button>
 <div class="sheet" id="sheet">
