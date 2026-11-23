@@ -4,14 +4,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="مهامي">
+<meta name="apple-mobile-web-app-title" content="ميمي">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
 <title>مهامي 🎀</title>
 <meta name="description" content="مهامي: تطبيق مهام وردي كيوت مع مؤقت بومودورو وقطة اسمها ميمي تفرح كلما أنجزتِ مهامكِ 🌸">
 <meta property="og:type" content="website">
 <meta property="og:title" content="مهامي 🎀">
 <meta property="og:description" content="تطبيق مهام وردي كيوت مع بومودورو وقطة ميمي 🌸">
 <meta name="theme-color" content="#FFF1F6">
-<meta name="author" content="ga_lsh">
+<meta name="author" content="غادة">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500;700&display=swap">
 <style>
 :root{
@@ -115,7 +120,7 @@ li .del{border:0;background:none;color:var(--soft);font-size:18px;padding:6px}
     <button data-f="all">الكل</button>
   </div>
   <ul id="list"></ul>
-  <p class="credit">تصميم وتطوير <b><bdi>ga_lsh</bdi></b><br>© ٢٠٢٦ جميع الحقوق محفوظة</p>
+  <p class="credit">صُنع بحب 🌸 بواسطة <b>غادة</b><br>© ٢٠٢٦ جميع الحقوق محفوظة</p>
 </div>
 <button class="fab" id="open">＋ مهمة جديدة</button>
 <div class="sheet" id="sheet">
@@ -251,6 +256,8 @@ $("rs").onclick=()=>setMode(mode);
 $("modes").onclick=e=>{const b=e.target.closest("button");if(b)setMode(b.dataset.m)};
 document.addEventListener("visibilitychange",()=>{if(running)tick()});
 render();drawT();
+
+if("serviceWorker" in navigator){window.addEventListener("load",()=>{navigator.serviceWorker.register("sw.js").catch(()=>{})})}
 </script>
 </body>
 </html>
